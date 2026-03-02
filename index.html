@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Holi Bash 2024</title>
+    <title>Aaj Work Cancel… Rang Confirm 💥/title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- EmailJS Library -->
@@ -20,17 +20,16 @@
             overflow: hidden;
         }
 
-        /* Guide Overlay */
         #guide-overlay {
             position: fixed; inset: 0; z-index: 150;
             display: none; align-items: center; justify-content: center;
-            background: rgba(0,0,0,0.8);
-            backdrop-filter: blur(8px);
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(12px);
         }
 
         .holi-bg-blob {
             position: absolute; width: 600px; height: 600px; border-radius: 50%;
-            filter: blur(100px); opacity: 0.4; z-index: 0;
+            filter: blur(120px); opacity: 0.5; z-index: 0;
             animation: floatBlob 30s infinite alternate ease-in-out;
         }
         @keyframes floatBlob {
@@ -39,24 +38,24 @@
         }
 
         .floating-item {
-            position: absolute; font-size: 3.5rem; opacity: 0.3; pointer-events: none;
+            position: absolute; font-size: 3.5rem; opacity: 0.35; pointer-events: none;
             animation: driftUp 15s infinite linear;
             z-index: 5;
         }
         @keyframes driftUp {
             0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 0.3; }
-            90% { opacity: 0.3; }
+            10% { opacity: 0.4; }
+            90% { opacity: 0.4; }
             100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
         }
 
         .login-card, .guide-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.96);
             backdrop-filter: blur(30px);
-            border: 2px solid rgba(255, 255, 255, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.7);
             z-index: 20; position: relative;
             box-shadow: 0 40px 100px rgba(0,0,0,0.4);
-            border-radius: 3rem;
+            border-radius: 4rem;
         }
 
         #admin-overlay { position: fixed; inset: 0; z-index: 110; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.9); backdrop-filter: blur(15px); }
@@ -98,6 +97,8 @@
         .hidden-stage { display: none !important; }
         .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+        
+        #target-search::placeholder { font-weight: bold; color: #cbd5e1; }
     </style>
 </head>
 <body>
@@ -111,9 +112,9 @@
         
         <!-- Floating Holi Themed Icons -->
         <div class="floating-item" style="left: 10%; animation-duration: 12s;">🔫</div>
-        <div class="floating-item" style="left: 20%; animation-duration: 18s; animation-delay: -3s;">🪣</div>
-        <div class="floating-item" style="left: 40%; animation-duration: 14s; animation-delay: -7s;">🎨</div>
-        <div class="floating-item" style="left: 60%; animation-duration: 20s; animation-delay: -1s;">🌈</div>
+        <div class="floating-item" style="left: 25%; animation-duration: 18s; animation-delay: -3s;">🪣</div>
+        <div class="floating-item" style="left: 45%; animation-duration: 14s; animation-delay: -7s;">🎨</div>
+        <div class="floating-item" style="left: 65%; animation-duration: 20s; animation-delay: -1s;">🌈</div>
         <div class="floating-item" style="left: 80%; animation-duration: 15s; animation-delay: -10s;">🔫</div>
         <div class="floating-item" style="left: 90%; animation-duration: 11s; animation-delay: -5s;">🪣</div>
 
@@ -156,22 +157,22 @@
                 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <div class="text-2xl mb-1">🎨</div>
                     <h4 class="font-black text-xs uppercase mb-1">Pick your Color</h4>
-                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold">Use the bottom palette to select your favorite Gulaal shade.</p>
+                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold font-black">Use the bottom palette to select your favorite Gulaal shade.</p>
                 </div>
                 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <div class="text-2xl mb-1">🔫</div>
                     <h4 class="font-black text-xs uppercase mb-1">Choose your Weapon</h4>
-                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold">Switch between <b>Splash</b>, <b>Pichkari</b>, or <b>Blast</b> modes.</p>
+                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold font-black">Switch between <b>Splash</b>, <b>Pichkari</b>, or <b>Blast</b> modes.</p>
                 </div>
                 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <div class="text-2xl mb-1">👥</div>
                     <h4 class="font-black text-xs uppercase mb-1">Pick a Target</h4>
-                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold">Select <b>Everyone</b> for a group blast or pick specific teammates.</p>
+                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold font-black">Select <b>Everyone</b> for a group blast or pick specific teammates.</p>
                 </div>
                 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100">
                     <div class="text-2xl mb-1">💥</div>
                     <h4 class="font-black text-xs uppercase mb-1">Mega Blast</h4>
-                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold">Trigger a <b>Mega Blast</b> to drench everyone in a rainbow surprise!</p>
+                    <p class="text-[10px] text-gray-500 leading-relaxed font-bold font-black">Trigger a <b>Mega Blast</b> to drench everyone in a rainbow surprise!</p>
                 </div>
             </div>
             <p class="mt-8 text-[11px] font-black text-gray-400 uppercase tracking-widest">Click anywhere on the screen to splash once you start!</p>
@@ -181,17 +182,18 @@
 
     <!-- Admin Panel -->
     <div id="admin-overlay">
-        <div class="bg-white p-8 rounded-[3rem] w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col shadow-2xl">
-            <div class="flex justify-between items-center mb-6">
+        <div class="bg-white p-8 rounded-[3rem] w-full max-w-5xl h-[90vh] overflow-hidden flex flex-col shadow-2xl">
+            <div class="flex justify-between items-center mb-6 flex-shrink-0">
                 <div>
                     <h3 class="text-2xl font-black">Authorized Guests</h3>
-                    <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Admin Control</p>
+                    <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Admin Control Center</p>
                 </div>
                 <button onclick="toggleAdminPanel(false)" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition">✕</button>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 overflow-y-auto">
-                <div class="bg-gray-50 p-6 rounded-[2rem] border border-gray-100">
-                    <h4 class="text-[10px] font-black mb-4 uppercase text-gray-400">Manual Entry</h4>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 flex-shrink-0">
+                <div class="bg-gray-50 p-6 rounded-[2.5rem] border border-gray-100">
+                    <h4 class="text-[10px] font-black mb-4 uppercase text-gray-400">Add Guest</h4>
                     <form id="admin-add-form" class="flex flex-col gap-3">
                         <input type="text" id="new-name" placeholder="Full Name" class="p-4 border rounded-2xl text-sm font-bold outline-none focus:border-blue-500" required>
                         <input type="email" id="new-email" placeholder="Work Email" class="p-4 border rounded-2xl text-sm font-bold outline-none focus:border-blue-500" required>
@@ -199,17 +201,18 @@
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
-                        <button type="submit" class="bg-blue-600 text-white p-4 rounded-2xl font-black text-xs hover:bg-blue-700">ADD GUEST</button>
+                        <button type="submit" class="bg-blue-600 text-white p-4 rounded-2xl font-black text-xs hover:bg-blue-700">AUTHORIZE</button>
                     </form>
                 </div>
-                <div class="bg-indigo-50 p-6 rounded-[2rem] border border-indigo-100">
+                <div class="bg-indigo-50 p-6 rounded-[2.5rem] border border-indigo-100">
                     <h4 class="text-[10px] font-black mb-1 uppercase text-indigo-400">Bulk Import</h4>
                     <textarea id="bulk-import-text" class="w-full h-32 p-3 text-[11px] border rounded-2xl outline-none focus:border-indigo-400 font-mono" placeholder="Name, Email, Gender"></textarea>
                     <button onclick="handleBulkImport()" class="w-full mt-3 bg-indigo-600 text-white py-4 rounded-2xl font-black text-xs hover:bg-indigo-700">IMPORT ALL</button>
                     <div id="import-status" class="text-[10px] font-black mt-2 text-center hidden"></div>
                 </div>
             </div>
-            <div class="flex-1 overflow-y-auto space-y-2 pr-2 border-t pt-4 custom-scrollbar" id="employee-list-admin"></div>
+
+            <div class="flex-1 overflow-y-auto space-y-2 pr-4 border-t pt-4 custom-scrollbar" id="employee-list-admin"></div>
         </div>
     </div>
 
@@ -234,11 +237,12 @@
                     <p class="text-[11px] font-black text-gray-400 mb-4 uppercase tracking-widest flex justify-between items-center">
                         Recipient <span id="recipient-count" class="bg-purple-100 text-purple-600 px-3 py-0.5 rounded-full text-[9px]">Everyone</span>
                     </p>
-                    <div id="target-list" class="max-h-40 overflow-y-auto flex flex-col gap-2 border-b pb-4 mb-4 custom-scrollbar pr-1">
-                        <label class="flex items-center gap-2.5 text-xs font-black cursor-pointer bg-purple-50 p-2.5 rounded-2xl border border-purple-100">
-                            <input type="checkbox" id="select-all-targets" checked class="w-4 h-4 rounded text-purple-500"> Everyone 🌈
-                        </label>
+                    
+                    <div class="mb-3">
+                        <input type="text" id="target-search" oninput="updateTargetUI()" placeholder="Search teammates..." class="w-full px-4 py-2 bg-gray-50 border border-gray-100 rounded-xl text-[10px] font-bold outline-none focus:border-purple-300 transition">
                     </div>
+
+                    <div id="target-list" class="max-h-40 overflow-y-auto flex flex-col gap-2 border-b pb-4 mb-4 custom-scrollbar pr-1"></div>
                     <textarea id="wish-text" rows="2" placeholder="Send a Holi message..." class="w-full p-4 bg-gray-50 border-2 border-gray-100 rounded-2xl text-xs font-bold outline-none mb-4 resize-none focus:border-purple-300 transition"></textarea>
                     <button onclick="sendAction()" class="w-full py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white rounded-2xl font-black text-xs hover:opacity-90 shadow-xl uppercase tracking-wider active:scale-95 transition-all">Blast & Wish! ✨</button>
                 </div>
@@ -290,7 +294,7 @@
         const auth = getAuth(app);
         const db = getFirestore(app);
         
-        const APP_ID = typeof __app_id !== 'undefined' ? __app_id : "holi-bash-v9-final";
+        const APP_ID = typeof __app_id !== 'undefined' ? __app_id : "holi-bash-v10-pro";
         const ADMIN_EMAIL = "prudhvireddy882@gmail.com";
         const HOLI_COLORS = ['#FF1493', '#FF4500', '#FFD700', '#32CD32', '#00BFFF', '#8A2BE2', '#FF6347', '#00FA9A', '#FFFF00', '#FF00FF', '#FFFACD', '#FFFFFF', '#00CED1'];
 
@@ -333,7 +337,7 @@
         document.getElementById('email-form').onsubmit = async (e) => {
             e.preventDefault();
             const email = document.getElementById('user-email').value.toLowerCase().trim();
-            const found = employees.find(emp => emp.email === email) || (email === ADMIN_EMAIL ? { name: "Prudhvi (Admin)", email: ADMIN_EMAIL, gender: "male" } : null);
+            const found = employees.find(emp => emp.email === email) || (email === ADMIN_EMAIL ? { name: "Admin", email: ADMIN_EMAIL, gender: "male" } : null);
 
             if (found) {
                 pendingUser = found;
@@ -348,10 +352,9 @@
                     }, { merge: true });
                     
                     if (typeof emailjs !== 'undefined') {
-                        // FIXED: Include both 'email' and 'to_email' to satisfy EmailJS template requirements
                         await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
                             email: email, 
-                            to_email: email, // Default field for many EmailJS templates
+                            to_email: email,
                             name: found.name, 
                             message: code
                         });
@@ -361,12 +364,7 @@
                     document.getElementById('target-email-display').innerText = email;
                     document.getElementById('login-stage-email').classList.add('hidden-stage');
                     document.getElementById('login-stage-passcode').classList.remove('hidden-stage');
-                } catch (err) { 
-                    statusEl.classList.add('hidden'); 
-                    console.error("EmailJS dispatch failed", err); 
-                    // Show helpful error hint to user
-                    alert("EmailJS error. Please check if your recipient field in EmailJS dashboard matches 'email' or 'to_email'.");
-                }
+                } catch (err) { statusEl.classList.add('hidden'); console.error("EmailJS error", err); alert("EmailJS error. Check parameters."); }
             } else { document.getElementById('email-error').classList.remove('hidden'); }
         };
 
@@ -385,18 +383,12 @@
             document.getElementById('user-pfp').innerText = found.name[0];
             if (found.email === ADMIN_EMAIL) document.getElementById('admin-btn').classList.remove('hidden');
             document.getElementById('login-overlay').style.display = 'none';
-            
-            // SHOW THE CELEBRATION GUIDE
             document.getElementById('guide-overlay').style.display = 'flex';
-            
             initCanvas();
             startListeningToActivities();
         }
 
-        window.closeGuide = () => {
-            document.getElementById('guide-overlay').style.display = 'none';
-        };
-
+        window.closeGuide = () => { document.getElementById('guide-overlay').style.display = 'none'; };
         window.logout = async () => { await signOut(auth); window.location.reload(); };
         window.resetToEmail = () => {
             document.getElementById('login-stage-passcode').classList.add('hidden-stage');
@@ -406,28 +398,17 @@
         function startListeningToActivities() {
             if (!currentUser || !auth.currentUser) return;
             const activityCol = collection(db, 'artifacts', APP_ID, 'public', 'data', 'activities');
-            
             let isInitialLoad = true;
             onSnapshot(activityCol, (snapshot) => {
                 const incoming = snapshot.docs
                     .map(d => ({id: d.id, ...d.data()}))
                     .filter(d => d.toEmail === currentUser.email || d.toEmail === 'Everyone');
-                
                 if (isInitialLoad) {
-                    activeActivities = incoming;
-                    isInitialLoad = false;
-                    clearAndRedraw();
-                    return;
+                    activeActivities = incoming; isInitialLoad = false; clearAndRedraw(); return;
                 }
-
-                // If deletions happen (Clear All), reload the board
                 if (incoming.length < activeActivities.length) {
-                    activeActivities = incoming;
-                    clearAndRedraw();
-                    return;
+                    activeActivities = incoming; clearAndRedraw(); return;
                 }
-
-                // Only play animations for truly NEW records
                 snapshot.docChanges().forEach(change => {
                     if (change.type === "added") {
                         const data = change.doc.data();
@@ -447,8 +428,9 @@
                         const x = Math.random() * canvas.width;
                         const y = Math.random() * canvas.height;
                         const rc = HOLI_COLORS[Math.floor(Math.random() * HOLI_COLORS.length)];
+                        // Slower Mega Blast explosions
                         createSplashEffect(x, y, rc, 85, 'blast');
-                    }, i * 110);
+                    }, i * 220); 
                 }
                 return;
             }
@@ -471,7 +453,7 @@
             div.style.borderColor = color;
             div.style.left = (Math.random() * 50 + 20) + '%';
             div.style.top = (Math.random() * 50 + 20) + '%';
-            div.innerHTML = `<div class="text-[10px] font-black uppercase text-gray-400">Wish from ${from}</div><div class="text-xs font-bold mt-1 text-gray-800">${text}</div>`;
+            div.innerHTML = `<div class="text-[10px] font-black uppercase text-gray-400">Wish from ${from}</div><div class="text-sm font-bold mt-1 text-gray-800">${text}</div>`;
             document.body.appendChild(div);
             setTimeout(() => div.remove(), 6000);
         }
@@ -483,7 +465,7 @@
         }
 
         window.triggerMegaBlast = async () => {
-            if (!currentUser || !auth.currentUser) return;
+            if (!currentUser) return;
             const targets = document.getElementById('select-all-targets').checked ? ['Everyone'] : Array.from(document.querySelectorAll('.target-checkbox:checked')).map(cb => cb.value);
             for (const t of targets) {
                 await addDoc(collection(db, 'artifacts', APP_ID, 'public', 'data', 'activities'), {
@@ -493,7 +475,7 @@
         };
 
         window.sendAction = async () => {
-            if (!currentUser || !auth.currentUser) return;
+            if (!currentUser) return;
             const wish = wishInput.value.trim() || "Bura na mano, Holi hai! 🌈✨";
             const targets = document.getElementById('select-all-targets').checked ? ['Everyone'] : Array.from(document.querySelectorAll('.target-checkbox:checked')).map(cb => cb.value);
             for (const t of targets) {
@@ -506,21 +488,17 @@
         };
 
         window.clearMyBoard = async () => {
-            if (!currentUser || !auth.currentUser) return;
+            if (!currentUser) return;
             const btn = document.getElementById('clear-all-btn');
             const original = btn.innerHTML;
-            btn.innerText = "CLEARING...";
-            btn.disabled = true;
-
+            btn.innerText = "CLEARING..."; btn.disabled = true;
             try {
                 const col = collection(db, 'artifacts', APP_ID, 'public', 'data', 'activities');
                 const snapshot = await getDocs(col);
                 const deletePromises = [];
                 snapshot.docs.forEach(d => {
                     const data = d.data();
-                    if (data.toEmail === currentUser.email || data.toEmail === 'Everyone') {
-                        deletePromises.push(deleteDoc(d.ref));
-                    }
+                    if (data.toEmail === currentUser.email || data.toEmail === 'Everyone') deletePromises.push(deleteDoc(d.ref));
                 });
                 if (deletePromises.length > 0) await Promise.all(deletePromises);
                 clearAndRedraw();
@@ -567,25 +545,24 @@
             `).join('');
         }
 
-        function updateTargetUI() {
+        window.updateTargetUI = () => {
+            const filter = document.getElementById('target-search').value.toLowerCase();
             const selectAll = document.getElementById('select-all-targets')?.checked;
             targetListDiv.innerHTML = `<label class="flex items-center gap-3 text-xs font-black cursor-pointer bg-purple-50 p-2.5 rounded-2xl border border-purple-100"><input type="checkbox" id="select-all-targets" ${selectAll ? 'checked' : ''}> Everyone 🌈</label>`;
             employees.forEach(emp => {
                 if (currentUser && emp.email === currentUser.email) return;
+                if (filter && !emp.name.toLowerCase().includes(filter) && !emp.email.toLowerCase().includes(filter)) return;
                 const div = document.createElement('label');
                 div.className = "flex items-center gap-3 text-[11px] font-bold py-2.5 border-b border-gray-50 hover:bg-gray-50 transition px-2";
                 div.innerHTML = `<input type="checkbox" class="target-checkbox" value="${emp.email}"> ${emp.name}`;
                 targetListDiv.appendChild(div);
             });
-        }
+        };
 
         function initCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            ctx.fillStyle = '#fdfdfd';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            const palette = document.getElementById('palette');
-            palette.innerHTML = '';
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            ctx.fillStyle = '#fdfdfd'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+            const palette = document.getElementById('palette'); palette.innerHTML = '';
             HOLI_COLORS.forEach(color => {
                 const div = document.createElement('div');
                 div.className = `color-swatch flex-shrink-0 ${color === currentColor ? 'active-color' : ''}`;
@@ -599,9 +576,11 @@
         class Particle {
             constructor(x, y, color, size, vx, vy, type) {
                 this.x = x; this.y = y; this.color = color; this.size = size;
-                this.vx = vx; this.vy = vy; this.alpha = 1;
-                this.decay = type === 'egg' ? 0.005 : 0.012;
-                this.gravity = type === 'pichkari' ? 0.04 : 0.12;
+                this.vx = vx * 0.7; // Slowed down initial velocity
+                this.vy = vy * 0.7;
+                this.alpha = 1;
+                this.decay = type === 'egg' ? 0.003 : 0.006; // Slower fade out
+                this.gravity = type === 'pichkari' ? 0.02 : 0.05; // Lower gravity for floating effect
             }
             draw() { ctx.save(); ctx.globalAlpha = this.alpha; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fillStyle = this.color; ctx.fill(); ctx.restore(); }
             update() { 
@@ -614,11 +593,12 @@
 
         function createSplashEffect(x, y, color, density, type) {
             let fc = (type === 'egg') ? (Math.random() > 0.5 ? '#FFFACD' : '#FFFFFF') : color;
-            for (let i = 0; i < density; i++) {
+            let count = type === 'pichkari' ? density * 2 : density; // More particles for pichkari stream
+            for (let i = 0; i < count; i++) {
                 const s = Math.random() * (type === 'egg' ? 14 : 9) + 2;
                 const a = Math.random() * Math.PI * 2;
-                const sp = Math.random() * (type === 'blast' ? 15 : 10) + 2;
-                particles.push(new Particle(x, y, fc, s, Math.cos(a)*sp, Math.sin(a)*sp-2, type));
+                const sp = Math.random() * (type === 'blast' ? 12 : 8) + 2;
+                particles.push(new Particle(x, y, fc, s, Math.cos(a)*sp, Math.sin(a)*sp-1, type));
             }
             document.body.classList.add('vibrate'); setTimeout(() => document.body.classList.remove('vibrate'), 120);
         }
@@ -632,7 +612,10 @@
         
         window.onmousemove = (e) => {
             if (!currentUser) return;
-            if (isDrawing && interactionMode === 'pichkari') { createSplashEffect(e.clientX, e.clientY, currentColor, 4, 'pichkari'); }
+            if (isDrawing && interactionMode === 'pichkari') { 
+                // Pichkari stream effect: more concentrated and slower
+                createSplashEffect(e.clientX, e.clientY, currentColor, 4, 'pichkari'); 
+            }
         };
 
         window.onmousedown = (e) => { 
