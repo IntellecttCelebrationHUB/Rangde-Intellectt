@@ -475,7 +475,7 @@
 
         window.sendAction = async () => {
             if (!currentUser) return;
-            const wish = wishInput.value.trim() || "Bura na mano, Holi hai! 🌈✨";
+            const wish = wishInput.value.trim() || "Pandaga Pandaga Rangula Pandaga! 🌈✨";
             const targets = document.getElementById('select-all-targets').checked ? ['Everyone'] : Array.from(document.querySelectorAll('.target-checkbox:checked')).map(cb => cb.value);
             for (const t of targets) {
                 await addDoc(collection(db, 'artifacts', APP_ID, 'public', 'data', 'activities'), {
